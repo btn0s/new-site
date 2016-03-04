@@ -3,12 +3,12 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-@import 'components/contact';
-@import 'components/work';
+// @import 'components/contact';
+// @import 'components/work';
 
 @include foundation-global-styles;
-// @include foundation-grid;
-@include foundation-flex-grid;
+@include foundation-grid;
+// @include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -50,49 +50,26 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-a {
-  cursor: pointer;
-}
-
 main {
-  padding: 10rem 0;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-
-  #navigation li {
-    opacity: 0;
-    position: relative;
-    top: 10px;
-  }
-
-  #logo {
-    display: none;
-    width: 75px;
-    margin: 2rem;
-  }
-
-  .menu {
-    display: table;
-    margin: 0 auto;
-
-    li {
-      display: table-cell;
-
-      a {
-        color: $body-font-color;
-      }
+  padding: 8rem 0;
+  #hero {
+    #logo {
+      width: 5rem;
+    }
+    #hero-stuff {
+      margin: 2rem;
     }
   }
+  #divider-one {
 
-  #social {
-    li {
-      a {
-        color: $dark-gray;
-      }
-    }
+  }
+  #work {
+
+  }
+  #divider-two {
+
+  }
+  #contact {
+
   }
 }
