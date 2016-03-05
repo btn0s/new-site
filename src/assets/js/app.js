@@ -1,19 +1,10 @@
  $(document).foundation();
 
  $(document).ready(function() {
-   //main
-    $('#logo').fadeIn(500);
-    $('#one li').each(function(index){
-      $(this).delay(1000).animate({opacity: "1", top: "-10px"}, index * 300 + 300);
-    });
-    $('#social li').delay(1500).animate({opacity: "1", top: "-10px"}, 1000);
+   // hero
+   $('#hex').click( function() {
+     $('#comingsoon').slideDown(150).fadeIn(100);
+     $('#comingsoon').delay(1000).slideUp(150).fadeOut(100);
+   });
 
-    //about
-    //$('#coolthingy').delay(500).fadeIn(1000);
-    $('#logo').delay(500).animate({opacity: "1", top: "10px"}, 1000);
-    $('.left').delay(1000).animate({opacity: "1", top: "-10px"}, 500);
-    $('.right').delay(1500).animate({opacity: "1", top: "-10px"}, 500);
-    $('#icon').delay(2000).animate({opacity: "1", top: "-10px"}, 500);
-
-    //work
   });
